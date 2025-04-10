@@ -1,0 +1,15 @@
+{
+  "name": "VS Code Environment Deployment",
+  "description": "Deploys a fully configured VS Code instance on the Nosana network for remote development.",
+  "resources": {
+    "cpu": 2,
+    "gpu": 0,
+    "memory": "4GB",
+    "storage": "10GB"
+  },
+  "commands": [
+    "git clone https://github.com/Microsoft/vscode-docker.git",
+    "cd vscode-docker",
+    "docker-compose up"
+  ]
+}
