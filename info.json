@@ -1,8 +1,8 @@
 {
-  "name": "VS Code Environment",
+  "name": "VS Code Dev Environment",
   "category": "Development",
-  "description": "Deploys a VS Code instance for remote development on the Nosana network.",
-  "author": "favyy",
+  "description": "Launch a fully functional, remote-accessible VS Code instance on the Nosana network.",
+  "author": "favy.eth",
   "version": "1.0",
-  "documentation_url": "https://docs.nosana.io/tutorials/llm/deepseek.html"
+  "documentation_url": "https://github.com/favytann/your-repo"
 }
