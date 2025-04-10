@@ -1,0 +1,8 @@
+{
+  "name": "VS Code Environment",
+  "category": "Development",
+  "description": "Deploys a VS Code instance for remote development on the Nosana network.",
+  "author": "Your Name",
+  "version": "1.0",
+  "documentation_url": "https://example.com/docs"
+}
