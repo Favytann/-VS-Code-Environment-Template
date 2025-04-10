@@ -2,7 +2,7 @@
   "name": "VS Code Environment",
   "category": "Development",
   "description": "Deploys a VS Code instance for remote development on the Nosana network.",
-  "author": "Your Name",
+  "author": "favyy",
   "version": "1.0",
-  "documentation_url": "https://example.com/docs"
+  "documentation_url": "https://docs.nosana.io/tutorials/llm/deepseek.html"
 }
