@@ -1,6 +1,6 @@
 {
-  "name": "VS Code Environment Deployment",
-  "description": "Deploys a fully configured VS Code instance on the Nosana network for remote development.",
+  "name": "VS Code Dev Environment",
+  "description": "Launch a remote-accessible VS Code development environment using Nosana.",
   "resources": {
     "cpu": 2,
     "gpu": 0,
@@ -8,8 +8,8 @@
     "storage": "10GB"
   },
   "commands": [
-    "git clone https://github.com/Microsoft/vscode-docker.git",
-    "cd vscode-docker",
-    "docker-compose up"
+    "apt-get update && apt-get install -y curl git",
+    "curl -fsSL https://code-server.dev/install.sh | sh",
+    "code-server --bind-addr 0.0.0.0:8080 --auth none"
   ]
 }
