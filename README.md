@@ -1,18 +1,10 @@
-# VS Code Environment Deployment Template
+# VS Code Dev Environment Template
 
 ## Overview
-This template deploys a fully configured instance of Visual Studio Code on the Nosana network. It allows remote development with custom extensions and configurations.
+This template launches a remote-accessible Visual Studio Code environment on the Nosana network using [code-server](https://github.com/coder/code-server).
 
 ## Setup Instructions
-1. Clone the repository:
-    ```
-    git clone https://github.com/Microsoft/vscode-docker.git
-    cd vscode-docker
-    ```
-2. Run the Docker Compose command to start the VS Code environment:
-    ```
-    docker-compose up
-    ```
+The job installs the latest version of `code-server`, a browser-accessible VS Code implementation. It binds the server to `0.0.0.0:8080` with no authentication for simplicity (you may change this).
 
 ## Requirements
 - CPU: 2 cores
@@ -20,8 +12,15 @@ This template deploys a fully configured instance of Visual Studio Code on the N
 - Storage: 10GB
 - No GPU required
 
-## Customizations
-You can customize the VS Code environment by editing the `Dockerfile` or `docker-compose.yml` file.
+## Deployment
+Once deployed, you can access the environment from the Nosana job’s public URL at port `8080`.
 
-## Usage
-After deployment, you can access the VS Code instance via the Nosana network dashboard.
+## Customizations
+To add extensions or customize the editor:
+- Modify the `Dockerfile`
+- Add `--install-extension <extension>` commands
+- Secure it with `--auth password` or `--auth none`
+
+## Links
+- [code-server GitHub](https://github.com/coder/code-server)
+- [Nosana Docs](https://docs.nosana.io)
